@@ -25,7 +25,7 @@
     "scripts": {
         "lint": "prettier --check .",
         "release-build": "napi build --platform --release --strip",
-        "build": "napi build --platform",
+        "build": "napi build --platform && patch index.js index.js.patch",
         "postinstall": "node download-lib.js",
         "test": "jest --verbose --testTimeout 10000",
         "doc": "typedoc --tsconfig ."
