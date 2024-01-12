@@ -26,7 +26,7 @@
         "lint": "prettier --check .",
         "release-build": "napi build --platform --release --strip",
         "build": "napi build --platform",
-        "postinstall": "node download-lib.js",
+        "postinstall": "",
         "test": "jest --verbose --testTimeout 10000",
         "doc": "typedoc --tsconfig ."
     },
